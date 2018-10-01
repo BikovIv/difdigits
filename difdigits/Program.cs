@@ -11,18 +11,31 @@ namespace difdigits
             string numberString = number.ToString();
             int firstNumber;
             int secondNumber;
-            string newNumber= "";
+            string newNumber = "";
             double lastNumber;
 
             Stopwatch start = new Stopwatch();
             start.Start();
-            
+
+            if (numberString.Length < 2)
+            {
+                newNumber += number + 1;
+                Console.WriteLine("Input: " + number);
+                Console.WriteLine("Output: " + newNumber);
+                start.Stop();
+                Console.WriteLine(start.ElapsedMilliseconds + " mS");
+                return;
+            }
+
+            number++;
+            numberString = number.ToString();
+
             for (int i = 0; i <= numberString.Length - 2; i++)
             {
                 firstNumber = (int)Char.GetNumericValue(numberString[i]);
-                secondNumber = (int)Char.GetNumericValue(numberString[i+1]);
+                secondNumber = (int)Char.GetNumericValue(numberString[i + 1]);
 
-                if (firstNumber == secondNumber && i <= numberString.Length-2)
+                if (firstNumber == secondNumber && i <= numberString.Length - 2)
                 {
                     if (secondNumber == 9)
                     {
@@ -53,11 +66,11 @@ namespace difdigits
                     {
                         secondNumber++;
                         newNumber += firstNumber.ToString() + secondNumber;
-                    }          
+                    }
 
-                    for (int g = i+2; g <= numberString.Length - 1; g++)
+                    for (int g = i + 2; g <= numberString.Length - 1; g++)
                     {
-                        if(Char.GetNumericValue(newNumber[newNumber.Length - 1])>=1)
+                        if (Char.GetNumericValue(newNumber[newNumber.Length - 1]) >= 1)
                         {
                             newNumber += 0;
                             secondNumber = 0;
@@ -66,26 +79,35 @@ namespace difdigits
                         {
                             newNumber += 1;
                             secondNumber = 1;
-                        }                       
-                    }    
+                        }
+                    }
                     break;
                 }
-                else
-                if (firstNumber == secondNumber && i == numberString.Length - 2)
+                else if (firstNumber == secondNumber && i == numberString.Length - 2)
                 {
-                    Console.WriteLine(firstNumber.ToString() + secondNumber);
+             
                     secondNumber++;
-                    newNumber += firstNumber.ToString() + secondNumber ;
+                    newNumber += firstNumber.ToString() + secondNumber;
                 }
-                else 
+                else if (firstNumber == secondNumber && numberString.Length < 3)
                 {
-                    newNumber += firstNumber;        
-                }      
+                    secondNumber++;
+                    newNumber += firstNumber + secondNumber.ToString();
+                }
+                else if (i == numberString.Length - 2)
+                {
+                    newNumber += firstNumber + secondNumber.ToString();
+                }
+                else
+                {
+                    newNumber += firstNumber;
+                }
             }
-            Console.WriteLine("Input: " + number);
+            Console.WriteLine("Input: " + --number);
             Console.WriteLine("Output: " + newNumber);
             start.Stop();
             Console.WriteLine(start.ElapsedMilliseconds + " mS");
+            Console.ReadKey();
         }
     }
 }

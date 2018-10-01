@@ -5,3 +5,10 @@ C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.csprojResolve
 C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.csproj.CoreCompileInputs.cache
 C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.exe
 C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.pdb
+H:\Repos\Console Applications\difdigits\difdigits\bin\Debug\difdigits.exe.config
+H:\Repos\Console Applications\difdigits\difdigits\bin\Debug\difdigits.exe
+H:\Repos\Console Applications\difdigits\difdigits\bin\Debug\difdigits.pdb
+H:\Repos\Console Applications\difdigits\difdigits\obj\Debug\difdigits.csprojResolveAssemblyReference.cache
+H:\Repos\Console Applications\difdigits\difdigits\obj\Debug\difdigits.csproj.CoreCompileInputs.cache
+H:\Repos\Console Applications\difdigits\difdigits\obj\Debug\difdigits.exe
+H:\Repos\Console Applications\difdigits\difdigits\obj\Debug\difdigits.pdb
