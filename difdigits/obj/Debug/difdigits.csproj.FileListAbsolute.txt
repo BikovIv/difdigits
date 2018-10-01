@@ -1,0 +1,7 @@
+C:\Users\Ivan\source\repos\difdigits\difdigits\bin\Debug\difdigits.exe.config
+C:\Users\Ivan\source\repos\difdigits\difdigits\bin\Debug\difdigits.exe
+C:\Users\Ivan\source\repos\difdigits\difdigits\bin\Debug\difdigits.pdb
+C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.exe
+C:\Users\Ivan\source\repos\difdigits\difdigits\obj\Debug\difdigits.pdb
